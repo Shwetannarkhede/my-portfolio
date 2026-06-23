@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shweta Narkhede — Full Stack Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="./style/styles.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader">
+  <div class="preloader-content">
+    <div class="loader-logo">
+      <span class="letter">S</span><span class="letter">N</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+    <div class="loading-text">Loading Experience</div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="custom-cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="#home" class="logo-link">
+        <span class="logo-text">SN</span>
+        <span class="logo-dot"></span>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode" onclick="toggleTheme()">
+        <span class="theme-icon dark-icon">🌙</span>
+        <span class="theme-icon light-icon">☀️</span>
+        <span class="theme-track"></span>
+      </button>
+    </ul>
+    <div class="nav-cta">
+      
+      <a href="#" class="btn-resume" onclick="downloadResume(); return false;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="grid-overlay"></div>
+  <div id="particles-js"></div>
+  <!-- Ambient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <em class="wave">👋</em> Hello, I'm Shweta
+        </div>
+        <h1 class="hero-title">
+          <span class="name-gradient">Shweta Narkhede</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span class="typed-text"></span>
+        </h2>
+        <p class="hero-description">
+          Crafting robust, scalable applications with Java & Spring Boot.
+          Passionate about clean code, great UX, and building things that make a real difference.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Let's Talk
+          </a>
+        </div>
+        <div class="hero-glass-strip" data-aos="fade-up" data-aos-delay="600">
+          <div class="glass-stat">
+            <span class="gs-num">3+</span>
+            <span class="gs-label">Projects</span>
+          </div>
+          <div class="glass-divider"></div>
+          <div class="glass-stat">
+            <span class="gs-num">5+</span>
+            <span class="gs-label">Tech Stack</span>
+          </div>
+          <div class="glass-divider"></div>
+          
+          <div class="glass-divider"></div>
+          <div class="glass-stat">
+            <span class="gs-num dot-green">●</span>
+            <span class="gs-label">Open to Work</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <img src="./Shweta_B_photo.jpg" alt="Shweta Narkhede" class="avatar-photo" />
+
+          <div class="float-badge badge-java">
+            <span class="badge-dot green"></span> Java Developer
+          </div>
+          <div class="float-badge badge-spring">
+            <span class="badge-dot violet"></span> Spring Boot
+          </div>
+          <div class="float-badge badge-open">
+            <span class="badge-dot rose"></span> Open to Work
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="mouse-wrapper">
+      <div class="mouse"><div class="wheel"></div></div>
+    </div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-aos="fade-up">Get To Know</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">About <span>Me</span></h2>
+      <div class="title-underline" data-aos="fade-up" data-aos-delay="150"></div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-image" data-aos="fade-right">
+        <div class="image-wrapper">
+          <img src="./Shweta_B_photo.jpg" alt="Shweta Narkhede" />
+          <div class="img-accent"></div>
+          <div class="img-accent-2"></div>
+        </div>
+      </div>
+
+      <div class="about-text" data-aos="fade-left">
+        <span class="about-label">Full Stack Developer</span>
+        <h3 class="about-title">
+          Building Digital Experiences<br/>with <span class="hl">Purpose & Precision</span>
+        </h3>
+        <div class="about-description">
+          <p>I'm a Full Stack Developer specializing in Java and Spring Boot, dedicated to building scalable, efficient, and user-centric applications. My journey in tech is driven by curiosity and a commitment to continuous learning.</p>
+          <p>During my internship at <strong>Infosys Springboard</strong>, I gained hands-on experience in full-stack development — working across the entire stack to build a complete <strong>Online Food Ordering System</strong> from the ground up.</p>
+        </div>
+
+      
+        <div class="about-cta">
+          <a href="#contact" class="btn-gradient">
+            Get In Touch
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-aos="fade-up">What I Know</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Technical <span>Skills</span></h2>
+      <div class="title-underline" data-aos="fade-up" data-aos-delay="150"></div>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="200">Technologies I use to build fast, scalable, and beautiful products</p>
+    </div>
+
+   <!-- Skill Category Tabs -->
+<div class="sk-tabs" data-aos="fade-up" data-aos-delay="200">
+  <button class="sk-tab active" data-cat="all">✦ All Skills</button>
+  <button class="sk-tab" data-cat="frontend">🎨 Frontend</button>
+  <button class="sk-tab" data-cat="backend">⚙️ Backend</button>
+  <button class="sk-tab" data-cat="database">💾 Database</button>
+  <button class="sk-tab" data-cat="tools">🛠️ Tools</button>
+</div>
+
+<!-- Skills Grid -->
+<div class="sk-grid" data-aos="fade-up" data-aos-delay="300">
+
+  <!-- HTML5 -->
+  <div class="sk-card" data-cat="frontend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="90" style="--clr:#e34c26"/>
+        </svg>
+        <div class="sk-emoji">🌐</div>
+        <div class="sk-pct-label">90%</div>
+      </div>
+      <div class="sk-name">HTML5</div>
+      <div class="sk-cat-tag">Frontend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Semantic markup, accessibility and responsive web development.</p>
+    </div>
+  </div>
+
+  <!-- CSS3 -->
+  <div class="sk-card" data-cat="frontend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="85" style="--clr:#264de4"/>
+        </svg>
+        <div class="sk-emoji">🎨</div>
+        <div class="sk-pct-label">85%</div>
+      </div>
+      <div class="sk-name">CSS3</div>
+      <div class="sk-cat-tag">Frontend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Flexbox, Grid, animations and responsive design.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="sk-card" data-cat="frontend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="80" style="--clr:#f7df1e"/>
+        </svg>
+        <div class="sk-emoji">⚡</div>
+        <div class="sk-pct-label">80%</div>
+      </div>
+      <div class="sk-name">JavaScript</div>
+      <div class="sk-cat-tag">Frontend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>DOM manipulation, ES6+, async programming and API integration.</p>
+    </div>
+  </div>
+
+  <!-- Java -->
+  <div class="sk-card featured-sk" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="92" style="--clr:#ed8b00"/>
+        </svg>
+        <div class="sk-emoji">☕</div>
+        <div class="sk-pct-label">92%</div>
+      </div>
+      <div class="sk-name">Java</div>
+      <div class="sk-cat-tag">Backend</div>
+      <div class="sk-star">⭐ Core</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>OOP, Collections Framework, Streams, Multithreading and Design Patterns.</p>
+    </div>
+  </div>
+
+  <!-- Spring Boot -->
+  <div class="sk-card featured-sk" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="88" style="--clr:#6db33f"/>
+        </svg>
+        <div class="sk-emoji">🍃</div>
+        <div class="sk-pct-label">88%</div>
+      </div>
+      <div class="sk-name">Spring Boot</div>
+      <div class="sk-cat-tag">Backend</div>
+      <div class="sk-star">⭐ Core</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>REST APIs, Dependency Injection, Security and Backend Development.</p>
+    </div>
+  </div>
+
+  <!-- REST APIs -->
+  <div class="sk-card" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="90" style="--clr:#c084fc"/>
+        </svg>
+        <div class="sk-emoji">🌐</div>
+        <div class="sk-pct-label">90%</div>
+      </div>
+      <div class="sk-name">REST APIs</div>
+      <div class="sk-cat-tag">Backend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Designing and consuming RESTful services with JSON and HTTP protocols.</p>
+    </div>
+  </div>
+
+  <!-- WebSocket -->
+  <div class="sk-card" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="85" style="--clr:#22c55e"/>
+        </svg>
+        <div class="sk-emoji">🔄</div>
+        <div class="sk-pct-label">85%</div>
+      </div>
+      <div class="sk-name">WebSocket</div>
+      <div class="sk-cat-tag">Backend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Real-time communication, notifications and live tracking systems.</p>
+    </div>
+  </div>
+
+  <!-- JDBC -->
+  <div class="sk-card" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="82" style="--clr:#fbbf24"/>
+        </svg>
+        <div class="sk-emoji">🔌</div>
+        <div class="sk-pct-label">82%</div>
+      </div>
+      <div class="sk-name">JDBC</div>
+      <div class="sk-cat-tag">Backend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Database connectivity, prepared statements and result set handling.</p>
+    </div>
+  </div>
+
+  <!-- Maven -->
+  <div class="sk-card" data-cat="backend">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="80" style="--clr:#c71a36"/>
+        </svg>
+        <div class="sk-emoji">📦</div>
+        <div class="sk-pct-label">80%</div>
+      </div>
+      <div class="sk-name">Maven</div>
+      <div class="sk-cat-tag">Backend</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Build automation and dependency management for Java projects.</p>
+    </div>
+  </div>
+
+  <!-- MySQL -->
+  <div class="sk-card" data-cat="database">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="85" style="--clr:#4479a1"/>
+        </svg>
+        <div class="sk-emoji">🐬</div>
+        <div class="sk-pct-label">85%</div>
+      </div>
+      <div class="sk-name">MySQL</div>
+      <div class="sk-cat-tag">Database</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Database design, queries, joins and optimization.</p>
+    </div>
+  </div>
+
+  <!-- MongoDB -->
+  <div class="sk-card" data-cat="database">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="88" style="--clr:#47a248"/>
+        </svg>
+        <div class="sk-emoji">🍃</div>
+        <div class="sk-pct-label">88%</div>
+      </div>
+      <div class="sk-name">MongoDB</div>
+      <div class="sk-cat-tag">Database</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Document databases, aggregation and Spring Data MongoDB.</p>
+    </div>
+  </div>
+
+  <!-- Git & GitHub -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="85" style="--clr:#f05032"/>
+        </svg>
+        <div class="sk-emoji">🐙</div>
+        <div class="sk-pct-label">85%</div>
+      </div>
+      <div class="sk-name">Git & GitHub</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Version control, branching, merging and collaboration workflows.</p>
+    </div>
+  </div>
+
+  <!-- Postman -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="88" style="--clr:#ff6c37"/>
+        </svg>
+        <div class="sk-emoji">📮</div>
+        <div class="sk-pct-label">88%</div>
+      </div>
+      <div class="sk-name">Postman</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>API testing, collections and request automation.</p>
+    </div>
+  </div>
+
+  <!-- Docker -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="80" style="--clr:#2496ed"/>
+        </svg>
+        <div class="sk-emoji">🐳</div>
+        <div class="sk-pct-label">80%</div>
+      </div>
+      <div class="sk-name">Docker</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Containerization, Docker Compose and deployment workflows.</p>
+    </div>
+  </div>
+
+  <!-- IntelliJ IDEA -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="90" style="--clr:#000000"/>
+        </svg>
+        <div class="sk-emoji">💡</div>
+        <div class="sk-pct-label">90%</div>
+      </div>
+      <div class="sk-name">IntelliJ IDEA</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Java and Spring Boot development, debugging and productivity tools.</p>
+    </div>
+  </div>
+
+  <!-- Eclipse -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="85" style="--clr:#2c2255"/>
+        </svg>
+        <div class="sk-emoji">🌙</div>
+        <div class="sk-pct-label">85%</div>
+      </div>
+      <div class="sk-name">Eclipse</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Java development, debugging and project management.</p>
+    </div>
+  </div>
+
+  <!-- VS Code -->
+  <div class="sk-card" data-cat="tools">
+    <div class="sk-card-inner">
+      <div class="sk-ring-wrap">
+        <svg class="sk-ring" viewBox="0 0 80 80">
+          <circle class="ring-bg" cx="40" cy="40" r="32"/>
+          <circle class="ring-fill" cx="40" cy="40" r="32" data-pct="90" style="--clr:#007acc"/>
+        </svg>
+        <div class="sk-emoji">💻</div>
+        <div class="sk-pct-label">90%</div>
+      </div>
+      <div class="sk-name">VS Code</div>
+      <div class="sk-cat-tag">Tools</div>
+    </div>
+    <div class="sk-hover-detail">
+      <p>Code editing, debugging, extensions and integrated terminal.</p>
+    </div>
+  </div>
+
+</div>
+    <!-- Bottom summary bar -->
+    <div class="sk-summary" data-aos="fade-up" data-aos-delay="400">
+      <div class="sk-sum-item">
+        <span class="sk-sum-num" style="background:linear-gradient(135deg,#e34c26,#264de4);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4</span>
+        <span class="sk-sum-label">Frontend Technologies</span>
+      </div>
+      <div class="sk-sum-div"></div>
+      <div class="sk-sum-item">
+        <span class="sk-sum-num" style="background:linear-gradient(135deg,#ed8b00,#6db33f);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4</span>
+        <span class="sk-sum-label">Backend Technologies</span>
+      </div>
+      <div class="sk-sum-div"></div>
+      <div class="sk-sum-item">
+        <span class="sk-sum-num" style="background:linear-gradient(135deg,#4479a1,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent">3</span>
+        <span class="sk-sum-label">Database Skills</span>
+      </div>
+      <div class="sk-sum-div"></div>
+      <div class="sk-sum-item">
+        <span class="sk-sum-num" style="background:linear-gradient(135deg,#f05032,#54c5f8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">4</span>
+        <span class="sk-sum-label">Dev Tools</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-aos="fade-up">My Journey</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Work <span>Experience</span></h2>
+      <div class="title-underline" data-aos="fade-up" data-aos-delay="150"></div>
+    </div>
+
+    <div class="timeline">
+
+    
+      <!-- Experience 1-->
+    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+  <div class="timeline-dot work">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+      <path d="M8 8h8M8 12h8M8 16h5"></path>
+    </svg>
+  </div>
+
+  <div class="timeline-card">
+    <div class="timeline-header">
+      <div class="timeline-meta">
+        <span class="timeline-company">EyeQlytics Technologies Private Limited</span>
+        <span class="timeline-badge work-badge">Experience</span>
+      </div>
+
+      <div class="timeline-period">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Nov 2025 – Apr 2026
+      </div>
+    </div>
+
+    <h3 class="timeline-role">Java Backend Developer | CopMap Project</h3>
+
+    <p class="timeline-description">
+      Contributed to CopMap, a government project developed for Maharashtra Police, focusing on backend development, real-time communication, and operational management systems.
+    </p>
+
+    <div class="timeline-achievements">
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Developed backend services and REST APIs using Java and Spring Boot.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Worked on patrol management, vehicle assignment, and officer tracking modules.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Implemented real-time tracking and communication using WebSocket.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Developed notification and alert management features.
+      </div>
+    </div>
+
+    <div class="timeline-tech">
+      <span class="tl-tag">Java</span>
+      <span class="tl-tag">Spring Boot</span>
+      <span class="tl-tag">MongoDB</span>
+      <span class="tl-tag">WebSocket</span>
+      <span class="tl-tag">REST APIs</span>
+    </div>
+  </div>
+</div>
+  <!-- Experience 2 -->
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+  <div class="timeline-dot work">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+      <path d="M8 8h8M8 12h8M8 16h5"></path>
+    </svg>
+  </div>
+
+  <div class="timeline-card">
+    <div class="timeline-header">
+      <div class="timeline-meta">
+        <span class="timeline-company">Infosys Springboard</span>
+        <span class="timeline-badge work-badge">Internship</span>
+      </div>
+
+      <div class="timeline-period">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Nov 2024 – Jan 2025
+      </div>
+    </div>
+
+    <h3 class="timeline-role">Python Developer Intern | Online Food Ordering System</h3>
+
+    <p class="timeline-description">
+      Developed a full-stack Online Food Ordering System during the Infosys Springboard internship, focusing on user authentication, order management, and database integration.
+    </p>
+
+    <div class="timeline-achievements">
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Developed a full-stack food ordering application using Python, MySQL, HTML, CSS, and JavaScript.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Implemented user authentication, registration, and order management features.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Designed responsive and user-friendly interfaces for customers and administrators.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Integrated MySQL database operations for menu management and order processing.
+      </div>
+    </div>
+
+    <div class="timeline-tech">
+      <span class="tl-tag">Python</span>
+      <span class="tl-tag">MySQL</span>
+      <span class="tl-tag">HTML</span>
+      <span class="tl-tag">CSS</span>
+      <span class="tl-tag">JavaScript</span>
+      <span class="tl-tag">Full-Stack Development</span>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Experience 3 -->
+     <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+  <div class="timeline-dot work">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+      <path d="M8 8h8M8 12h8M8 16h5"></path>
+    </svg>
+  </div>
+
+  <div class="timeline-card">
+    <div class="timeline-header">
+      <div class="timeline-meta">
+        <span class="timeline-company">Websums Software Pvt. Ltd.</span>
+        <span class="timeline-badge work-badge">Internship</span>
+      </div>
+
+      <div class="timeline-period">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Mar 2025 – Jul 2025
+      </div>
+    </div>
+
+    <h3 class="timeline-role">Web Developer Intern</h3>
+
+    <p class="timeline-description">
+      Worked as a Web Developer Intern and contributed to the development of a college project for Kakade Polytechnic.
+    </p>
+
+    <div class="timeline-achievements">
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Built and maintained responsive web pages for the project.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Developed user-friendly interfaces using HTML, CSS, and JavaScript.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Collaborated with the development team to implement project requirements.
+      </div>
+
+      <div class="achievement-item">
+        <span class="achievement-icon">✦</span>
+        Participated in testing, debugging, and improving application performance.
+      </div>
+    </div>
+
+    <div class="timeline-tech">
+      <span class="tl-tag">HTML</span>
+      <span class="tl-tag">CSS</span>
+      <span class="tl-tag">JavaScript</span>
+      <span class="tl-tag">Web Development</span>
+      <span class="tl-tag">Responsive Design</span>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-aos="fade-up">My Work</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Featured <span>Projects</span></h2>
+      <div class="title-underline" data-aos="fade-up" data-aos-delay="150"></div>
+    </div>
+
+    <div class="projects-grid-new">
+
+      <!-- Project 1 — large card -->
+      <div class="pcard pcard-featured" data-aos="fade-up" data-aos-delay="100">
+        <div class="pcard-visual p-vis-1">
+          <div class="pcard-glow"></div>
+          <div class="pcard-screen">
+            <div class="screen-bar">
+              <span class="sdot sr"></span><span class="sdot sy"></span><span class="sdot sg"></span>
+              <span class="screen-url">localhost:8080/students</span>
+            </div>
+            <div class="screen-body">
+              <div class="sb-sidebar">
+                <div class="sb-logo-box"></div>
+                <div class="sb-nav-item active"></div>
+                <div class="sb-nav-item"></div>
+                <div class="sb-nav-item"></div>
+                <div class="sb-nav-item"></div>
+              </div>
+              <div class="sb-main">
+                <div class="sb-header">
+                  <div class="sb-title-bar"></div>
+                  <div class="sb-btn"></div>
+                </div>
+                <div class="sb-table">
+                  <div class="sb-row header-row">
+                    <div class="sb-cell c-hl"></div><div class="sb-cell"></div><div class="sb-cell"></div><div class="sb-cell"></div>
+                  </div>
+                  <div class="sb-row"><div class="sb-cell c-hl"></div><div class="sb-cell"></div><div class="sb-cell"></div><div class="sb-cell c-badge"></div></div>
+                  <div class="sb-row"><div class="sb-cell c-hl"></div><div class="sb-cell"></div><div class="sb-cell"></div><div class="sb-cell c-badge2"></div></div>
+                  <div class="sb-row"><div class="sb-cell c-hl"></div><div class="sb-cell"></div><div class="sb-cell"></div><div class="sb-cell c-badge"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-num">01</div>
+        </div>
+        <div class="pcard-content">
+          <div class="pcard-top">
+            <h3 class="pcard-title">Student Management System</h3>
+            <div class="pcard-status"><span class="status-dot"></span> Completed</div>
+          </div>
+          <p class="pcard-desc">A full-featured web application to manage student records, attendance tracking, and academic performance. Includes real-time dashboard, role-based access control, and exportable reports.</p>
+          <div class="pcard-features">
+            <div class="feature-pill">📋 Record Management</div>
+            <div class="feature-pill">📊 Analytics Dashboard</div>
+            <div class="feature-pill">🔐 Role-based Auth</div>
+          </div>
+          <div class="pcard-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">JDBC</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">HTML/CSS</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="pcard-btn pcard-btn-gh">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="pcard-btn pcard-btn-live">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="pcard pcard-featured" data-aos="fade-up" data-aos-delay="150">
+        <div class="pcard-visual p-vis-2">
+          <div class="pcard-glow glow-2"></div>
+          <div class="pcard-screen">
+            <div class="screen-bar">
+              <span class="sdot sr"></span><span class="sdot sy"></span><span class="sdot sg"></span>
+              <span class="screen-url">foodorder.app/menu</span>
+            </div>
+            <div class="screen-body no-sidebar">
+              <div class="food-hero-bar"></div>
+              <div class="food-grid">
+                <div class="food-card fc-hl">
+                  <div class="fc-img"></div>
+                  <div class="fc-name"></div>
+                  <div class="fc-price"></div>
+                </div>
+                <div class="food-card">
+                  <div class="fc-img"></div>
+                  <div class="fc-name"></div>
+                  <div class="fc-price"></div>
+                </div>
+                <div class="food-card fc-hl">
+                  <div class="fc-img"></div>
+                  <div class="fc-name"></div>
+                  <div class="fc-price"></div>
+                </div>
+              </div>
+              <div class="food-cart-bar">
+                <div class="cart-label"></div>
+                <div class="cart-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pcard-num">02</div>
+        </div>
+        <div class="pcard-content">
+          <div class="pcard-top">
+            <h3 class="pcard-title">Online Food Ordering System</h3>
+            <div class="pcard-status"><span class="status-dot"></span> Completed</div>
+          </div>
+          <p class="pcard-desc">A full-stack food ordering platform with restaurant menus, cart management, live order tracking, and payment flow. Built during Infosys Springboard internship as a capstone project.</p>
+          <div class="pcard-features">
+            <div class="feature-pill">🍕 Menu Browser</div>
+            <div class="feature-pill">🛒 Cart & Checkout</div>
+            <div class="feature-pill">📍 Order Tracking</div>
+          </div>
+          <div class="pcard-tech">
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="pcard-btn pcard-btn-gh">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="pcard-btn pcard-btn-live">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="pcard pcard-featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pcard-visual p-vis-3">
+          <div class="pcard-glow glow-3"></div>
+          <div class="pcard-screen phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-body">
+              <div class="ph-header">
+                <div class="ph-date"></div>
+                <div class="ph-time"></div>
+              </div>
+              <div class="ph-tasks">
+                <div class="ph-task done"><span class="ph-check">✓</span><div class="ph-task-line"></div></div>
+                <div class="ph-task done"><span class="ph-check">✓</span><div class="ph-task-line w80"></div></div>
+                <div class="ph-task active"><span class="ph-ring"></span><div class="ph-task-line c-teal"></div></div>
+                <div class="ph-task"><span class="ph-ring dim"></span><div class="ph-task-line"></div></div>
+                <div class="ph-task"><span class="ph-ring dim"></span><div class="ph-task-line w80"></div></div>
+              </div>
+              <div class="ph-fab"></div>
+            </div>
+          </div>
+          <div class="pcard-num">03</div>
+        </div>
+        <div class="pcard-content">
+          <div class="pcard-top">
+            <h3 class="pcard-title">Digital Planner</h3>
+            <div class="pcard-status"><span class="status-dot"></span> Completed</div>
+          </div>
+          <p class="pcard-desc">A cross-platform mobile productivity app for task scheduling, reminders, and goal tracking. Features cloud sync via Firebase so your plans follow you across all devices.</p>
+          <div class="pcard-features">
+            <div class="feature-pill">✅ Task Scheduling</div>
+            <div class="feature-pill">🔔 Smart Reminders</div>
+            <div class="feature-pill">☁️ Cloud Sync</div>
+          </div>
+          <div class="pcard-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Firestore</span>
+          </div>
+          <div class="pcard-actions">
+            <a href="#" class="pcard-btn pcard-btn-gh">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="pcard-btn pcard-btn-live">
+              Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-aos="fade-up">Get In Touch</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Let's Work <span>Together</span></h2>
+      <div class="title-underline" data-aos="fade-up" data-aos-delay="150"></div>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info" data-aos="fade-right">
+        <h3 class="contact-subtitle">Have a project in mind?</h3>
+        <p class="contact-description">
+          I'm always open to new projects and opportunities. Whether you have a question,
+          a collaboration idea, or just want to say hi — my inbox is open!
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-text">
+              <span class="label">Email</span>
+              <a href="mailto:shwetanarkhede52@gmail.com">shwetanarkhede52@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-text">
+              <span class="label">Phone</span>
+              <a href="tel:+919403494363">+91 9403494363</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-text">
+              <span class="label">Location</span>
+              <span>Pune, Maharashtra, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" class="social-link" title="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form" data-aos="fade-left">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Shweta Narkhede" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">SN</div>
+      <p class="footer-text">© 2026 Shweta Narkhede. All rights reserved.</p>
+      <p class="footer-quote">Built with passion and lots of ☕</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="./script/scripts.js"></script>
+</body>
+</html>
